@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* Primary */
+  --dark: hsl(0, 0%, 55%);
+  --darker: hsl(0, 0%, 41%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  /* Greys */
+}
+
+.link-styling:hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--white);
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(8px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(8px, -5px)
+}

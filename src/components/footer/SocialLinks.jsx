@@ -1,0 +1,22 @@
+import React from "react";
+
+const SocialLinks = () => {
+  return (
+    <div className="flex justify-between w-1/3 lg:w-2/5 mx-auto lg:ml-auto mb-5">
+      <button className="link-styling pb-2">
+        <img src="../images/icon-facebook.svg" alt="" />
+      </button>
+      <button className="link-styling pb-2">
+        <img src="../images/icon-twitter.svg" alt="" />
+      </button>
+      <button className="link-styling pb-2">
+        <img src="../images/icon-pinterest.svg" alt="" />
+      </button>
+      <button className="link-styling pb-2">
+        <img src="../images/icon-instagram.svg" alt="" />
+      </button>
+    </div>
+  );
+};
+
+export default SocialLinks;
