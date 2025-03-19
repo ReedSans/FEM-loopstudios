@@ -7,6 +7,7 @@ import Careers from "./pages/Careers";
 import Events from "./pages/Events";
 import Products from "./pages/Products";
 import Support from "./pages/Support";
+import NotFound from "./pages/NotFound";
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
   const routes = [{
     path: '/',
     element: <Layout />,
+    errorElement: <NotFound />,
     children: [{
       path: '/',
       element: <HomePage />
