@@ -2,11 +2,6 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from "./pages/HomePage";
 import Layout from "./Layout";
-import About from "./pages/About";
-import Careers from "./pages/Careers";
-import Events from "./pages/Events";
-import Products from "./pages/Products";
-import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
 
 
@@ -21,16 +16,16 @@ const App = () => {
       element: <HomePage />
     }, {
       path: '/careers',
-      element: <Careers />
+      element: <HomePage />
     }, {
       path: '/events',
-      element: <Events />
+      element: <HomePage />
     }, {
       path: '/products',
-      element: <Products />
+      element: <HomePage />
     }, {
       path: '/support',
-      element: <Support />
+      element: <HomePage />
     }, ]
   }]
 

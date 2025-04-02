@@ -1,4 +1,13 @@
 import React from "react";
+import CreationsCard from "./CreationsCard";
+import NightArcade from "../../../public/images/desktop/image-night-arcade.jpg"
+import SoccerTeamVr from "../../../public/images/desktop/image-soccer-team.jpg"
+import TheGrid from "../../../public/images/desktop/image-grid.jpg"
+import FromUpAbove from "../../../public/images/desktop/image-from-above.jpg"
+import PocketBorealis from "../../../public/images/desktop/image-pocket-borealis.jpg"
+import TheCuriosity from "../../../public/images/desktop/image-curiosity.jpg"
+import FishEye from "../../../public/images/desktop/image-fisheye.jpg"
+import DeepEarth from "../../../public/images/desktop/image-deep-earth.jpg"
 
 const OurCreations = () => {
   return (
@@ -10,92 +19,14 @@ const OurCreations = () => {
         </button>
       </div>
       <div className="flex flex-col lg:flex-row lg:flex-wrap justify-between mt-12 lg:mt-20 gap-y-6 gap-x-1 mx-auto">
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-night-arcade.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            SOCCER <br />
-            TEAM VR
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-soccer-team.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            THE <br />
-            GRID
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-grid.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            FROM UP <br />
-            ABOVE VR
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-from-above.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            POCKET BOREALIS
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-pocket-borealis.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            THE <br />
-            CURIOSITY
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-curiosity.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            MAKE IT <br />
-            FISHEYE
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white">
-          <img
-            src="../images/desktop/image-fisheye.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            DEEP <br />
-            EARTH
-          </span>
-        </div>
-        <div className="relative hover:opacity-40  w-full lg:basis-1/5 lg:w-1/5 hover:text-black text-white m-0 p-0">
-          <img
-            src="../images/desktop/image-deep-earth.jpg"
-            alt="Deep earth"
-            className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top"
-          />
-          <span className="text-inherit absolute bottom-5 left-8 text-4xl  w-2/3 font-slim">
-            NIGHT <br /> ARCADE
-          </span>
-        </div>
+        <CreationsCard imgUrl={DeepEarth} altText="Deep Earth" cardText="DEEP EARTH" />
+        <CreationsCard imgUrl={NightArcade} altText="Night Arcade" cardText="NIGHT ARCADE" />
+        <CreationsCard imgUrl={SoccerTeamVr} altText="Soccer Team Vr" cardText="SOCCER TEAM VR" />
+        <CreationsCard imgUrl={TheGrid} altText="The Grid" cardText={`THE GRID`} />
+        <CreationsCard imgUrl={FromUpAbove} altText="From Up Above Vr" cardText="NIGHT ARCADE" />
+        <CreationsCard imgUrl={PocketBorealis} altText="Pocket Borealis" cardText="POCKET BOREALIS" />
+        <CreationsCard imgUrl={TheCuriosity} altText="The Curiosity" cardText="THE CURIOSITY" />
+        <CreationsCard imgUrl={FishEye} altText="Make It Fisheye" cardText="MAKE IT FISHEYE" />
       </div>
       <div className="flex justify-center">
         <button className="lg:hidden mt-12 bg-white hover:bg-black border-2 border-black hover:border-white text-black hover:text-white px-8 py-2 tracking-widest transition-all duration-300 ease-in-out">
