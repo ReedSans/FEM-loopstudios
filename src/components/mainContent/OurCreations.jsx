@@ -11,9 +11,9 @@ import DeepEarth from "../../../public/images/desktop/image-deep-earth.jpg"
 
 const OurCreations = () => {
   return (
-    <section className="mt-56 lg:mt-40">
+    <section className="mt-32 md:mt-56 lg:mt-40">
       <div className="flex flex-col items-center lg:flex-row justify-between ">
-        <h2 className="text-4xl font-slim tracking-wide">OUR CREATIONS</h2>
+        <h2 className="text-center md:text-start text-3xl md:text-4xl font-slim tracking-wide">OUR CREATIONS</h2>
         <button className="hidden lg:inline-block px-8 py-2 tracking-widest bg-white hover:bg-black border-2 border-black hover:border-white text-black hover:text-white transition-all duration-300 ease-in-out">
           SEE ALL
         </button>

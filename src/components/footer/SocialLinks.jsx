@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-between w-1/3 lg:w-2/5 mx-auto lg:ml-auto mb-5">
+    <div className="flex justify-between gap-6 lg:gap-4 mx-auto mb-5">
       <button className="link-styling pb-2">
         <img src="../images/icon-facebook.svg" alt="" />
       </button>

@@ -5,7 +5,7 @@ const Logo = () => {
     <>
       <div className={`lg:static |  z-20`}>
         <a href="">
-          <img src="../images/logo.svg" alt="" />
+          <img src="../images/logo.svg" alt="" className='w-36 md:w-full'/>
         </a>
       </div>
     </>

@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="  bg-[url('../images/desktop/image-hero.jpg')] bg-cover bg-center text-white min-h-[80vh] pb-36">
-      <nav className="container mx-auto max-w-6xl flex justify-between py-12">
+      <nav className="container mx-auto max-w-6xl flex justify-between items-center py-12">
         <Logo />
         <NavMenu />
         <MobileMenu isOpen={isOpen} toggle={toggleNavMenu} />
