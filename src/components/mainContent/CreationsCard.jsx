@@ -8,7 +8,7 @@ const CreationsCard = ({imgUrl, altText, cardText}) => {
         alt={altText}
         className="w-full h-[220px] lg:h-full object-cover object-right-top lg:object-top "
       />
-      <span className="text-inherit absolute bottom-5 left-8 group-hover:text-black text-3xl w-2/3 font-slim z-30 transition-all duration-300 ease-in-out">
+      <span className="text-inherit absolute bottom-5 left-8 group-hover:text-black text-3xl w-2/3 font-slim z-10 transition-all duration-300 ease-in-out">
         {cardText}
       </span>
       <div className="absolute opacity-0 group-hover:opacity-100 top-0 w-full h-full bg-grey900 group-hover:bg-[rgba(250,250,250,0.7)] transition-all duration-300 ease-in-out">
